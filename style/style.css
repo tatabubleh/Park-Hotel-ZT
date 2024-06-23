@@ -1,0 +1,749 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1176px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+@media screen and (max-width: 1176px) {
+    .wrapper {
+        padding-left: 43px;
+        padding-right: 41px;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 2.187rem;
+    }
+}
+
+header {
+    padding: 30px 0;
+    font-weight: 700;
+    font-size: 1.25rem;
+    background: #20535080;
+}
+
+header a {
+
+    color: #FFF;
+}
+
+header a:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #FFF;
+    margin: 0 45px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 24px 0;
+        font-size: 1.125rem;
+    }
+
+    header a:not(:last-child)::after {
+        width: 25px;
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 18px 0;
+        font-size: 0.937rem;
+    }
+
+    header a:not(:last-child)::after {
+        width: 20px;
+    }
+}
+
+/*доп.задание*/
+@media screen and (max-width: 510px) {
+    header a:not(:last-child)::after {
+        display: block;
+        margin: 15px auto;
+    }
+}
+
+.park {
+    padding: 450px 0 30px;
+    background-image: url(../images/header-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+
+}
+
+.registration::after {
+    content: "";
+    width: 57px;
+    height: 20px;
+    display: block;
+    background-image: url(../icons/pointer.svg);
+    margin: 80px auto 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.park p {
+    margin: 30px auto 60px;
+    font-weight: 400;
+    font-size: 1.56rem;
+    max-width: 495px;
+}
+
+.park a:first-of-type {
+    display: block;
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    background-color: #AE5F3D;
+    border-radius: 30px;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.park a:first-of-type:hover {
+    background-color: #F1F1F1;
+    transition: all .7s;
+    color: #AE5F3D;
+}
+
+h1 {
+    font-size: 3.75rem;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2.812rem;
+    }
+
+    .park {
+        padding: 353px 0 20px;
+    }
+
+    .park p {
+        margin: 20px auto 45px;
+        font-size: 1.125rem;
+        max-width: 356px;
+    }
+
+    .park a:first-of-type {
+        width: 248px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 17px;
+    }
+
+    .registration::after {
+        margin: 40px auto 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .park {
+        padding: 249px 0 20px;
+    }
+
+    .park p {
+        margin: 20px auto 35px;
+    }
+
+    .registration::after {
+        margin: 27px auto 0;
+    }
+}
+
+.about h2 {
+    margin: 30px 0 37px;
+}
+
+.about p {
+    margin: 0 auto;
+    max-width: 608px;
+}
+
+.about img {
+    max-width: 617px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .about p {
+        max-width: 537px;
+    }
+
+    .about img {
+        max-width: 553px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about h2 {
+        margin: 25px 0 32px;
+    }
+
+    .about p {
+        max-width: 571px;
+    }
+
+    .about img {
+        max-width: 468px;
+    }
+}
+
+
+h3 {
+    font-weight: 400;
+    font-size: 1.56rem;
+}
+
+@media screen and (max-width: 1024px) {
+    h3 {
+        font-size: 1.375rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: 1.437rem;
+    }
+}
+
+.text {
+    font-weight: 300;
+    font-size: 1.56rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .text {
+        font-size: 1.375rem;
+    }
+}
+
+.entertainments {
+    background-color: #F1F1F1
+}
+
+.entertainments .text {
+    margin: 37px auto 30px;
+    max-width: 520px;
+}
+
+.entertainments article {
+    display: inline-block;
+    width: calc((100% - 2 * 24px) / 3);
+    background-color: #FFF;
+    border-radius: 30px;
+    padding: 30px 5px;
+    font-weight: 300;
+    font-size: 20px;
+    max-width: 444px;
+    vertical-align: top;
+}
+
+.entertainments-type:not(:last-child) {
+    margin-right: 24px;
+}
+
+.entertainments i {
+    color: #AE5F3D;
+    font-size: 170px;
+}
+
+.entertainments article h3 {
+    margin: 25px 0 20px;
+}
+
+.entertainments-type p {
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+
+
+h3 {
+    font-weight: 400;
+    font-size: 1.56rem;
+}
+
+@media screen and (max-width: 1024px) {
+    h3 {
+        font-size: 1.375rem;
+    }
+
+    .entertainments .text {
+        max-width: 456px;
+    }
+
+    .entertainments article {
+        width: calc((100% - 2 * 20px) / 3);
+        font-size: 16px;
+    }
+
+    .entertainments-type:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .entertainments i {
+        font-size: 120px;
+    }
+
+    .entertainments article h3 {
+        margin: 15px 0 15px;
+    }
+
+    .entertainments-type p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: 1.437rem;
+    }
+
+    .entertainments .text {
+        margin: 32px auto 35px;
+    }
+
+    .entertainments article {
+        display: block;
+        width: 100%;
+        font-size: 23px;
+        margin: 0 auto;
+    }
+
+    .entertainments-type:not(:last-child) {
+        margin: 0 auto 30px;
+    }
+
+    .entertainments-type p {
+        font-size: 1.437rem;
+    }
+
+    .entertainments i {
+        font-size: 150px;
+    }
+}
+
+
+.apartments .text {
+    max-width: 617px;
+    margin: 30px auto 55px;
+}
+
+.apartments article {
+    display: inline-block;
+    width: calc((100% - 2 * 48px) / 3);
+    text-align: left;
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 698px;
+    vertical-align: top;
+}
+
+.apartments article:not(:last-child) {
+    margin-right: 48px;
+}
+
+.apartments article h3 {
+    margin: 25px 0 15px;
+}
+
+.apartments-type:not(:last-child) {
+    margin-right: 48px;
+}
+
+.apartments-type::after {
+    content: "";
+    width: 132px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    background-color: #FFFFFFCC;
+    color: #000;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+}
+
+.apartments-type:first-of-type::after {
+    content: "от 7 т.р./сутки";
+}
+
+.apartments-type:nth-of-type(2)::after {
+    content: "от 23 т.р./сутки";
+}
+
+.apartments-type:nth-of-type(3)::after {
+    content: "от 13 т.р./сутки";
+}
+
+.apartments-type:nth-of-type(2)::before {
+    content: "VIP";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F24040;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    color: #FFF;
+    line-height: 50px;
+    text-align: center;
+}
+
+.apartments-type p {
+    font-size: 1.125rem;
+}
+
+.apartments-type img {
+    max-width: 698px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .apartments .text {
+        margin: 30px auto 30px;
+    }
+
+    .apartments article {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .apartments article:not(:last-child) {
+        margin: 0 auto 75px;
+    }
+
+    .apartments article h3 {
+        margin: 15px 0;
+    }
+
+    .apartments-type::after {
+        width: 150px;
+        height: 34px;
+        font-family: 18px;
+        top: 20px;
+        right: 20px;
+    }
+
+    .apartments-type:nth-of-type(2)::before {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .apartments-type p {
+        font-size: 1.437rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .apartments .text {
+        max-width: 501px;
+        margin: 25px auto 30px;
+    }
+
+    .apartments article {
+        max-width: 590px;
+    }
+
+    .apartments article:not(:last-child) {
+        margin: 0 auto 80px;
+    }
+
+    .apartments article h3 {
+        margin: 20px 0;
+    }
+
+    .apartments-type::after {
+        width: 168px;
+        height: 36px;
+        font-size: 20px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .apartments-type p {
+        font-size: 1.375rem;
+    }
+}
+
+.booking {
+    background-color: #F5F5F5;
+}
+
+.booking div {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+form {
+    max-width: 1016px;
+    padding: 100px 121px 100px 119px;
+    background-color: #FFF;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+form .button:hover {
+    background-color: #F1F1F1;
+}
+
+form h2 {
+    text-align: center;
+}
+
+form input:focus {
+    outline-color: #AE5F3D;
+}
+
+form .text {
+    max-width: 572px;
+    margin: 30px auto 50px;
+    text-align: center;
+
+}
+
+.booking .type-radio {
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.user-input {
+    margin-bottom: 25px;
+    width: 100%;
+    height: 60px;
+    padding-left: 35px;
+    border-color: #AE5F3D;
+}
+
+form div:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    height: 20px;
+    width: 20px;
+    margin-right: 16px;
+    font-size: 20px;
+}
+
+
+.button {
+    display: block;
+    width: 100%;
+    max-width: 404px;
+    height: 60px;
+    line-height: 60px;
+    margin: 40px auto 0;
+    background-color: #AE5F3D;
+    border-radius: 30px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: #F1F1F1;
+    transition: all .7s;
+    color: #AE5F3D;
+}
+
+label.type {
+    display: block;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .booking div {
+        font-size: 20px;
+    }
+
+    form {
+        max-width: 820px;
+        padding: 80px 68px;
+    }
+
+    form .text {
+        max-width: 506px;
+        margin: 30px auto;
+    }
+
+    .user-input {
+        height: 53px;
+    }
+
+    input[type="radio"] {
+        margin-right: 15px;
+        font-size: 18px;
+    }
+
+    .button {
+        max-width: 324px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .booking div {
+        font-size: 22px;
+    }
+
+    form {
+        max-width: 720px;
+        padding: 70px 53px;
+    }
+
+    form .text {
+        margin: 35px auto 25px;
+    }
+
+    .user-input {
+        height: 58px;
+    }
+
+    input[type="radio"] {
+        margin-right: 13px;
+        font-size: 20px;
+    }
+}
+
+footer {
+    margin: 70px 0;
+    font-weight: 500;
+}
+
+footer nav {
+    width: 150px;
+    margin: 35px auto;
+    padding: 25px 0;
+    border-top: 0.7px solid #737373;
+    border-bottom: 0.7px solid #737373;
+}
+
+footer h2 {
+    font-size: 1.875rem;
+
+}
+
+footer nav a {
+    font-size: 0.94rem;
+    display: block;
+    color: black;
+    text-transform: uppercase;
+}
+
+footer nav a:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.icons a {
+    display: inline-block;
+    color: #000;
+    font-size: 24px;
+}
+
+.icons a:not(:last-child) {
+    margin-right: 30px;
+}
+
+.icons:hover {
+    transform: scale(1.5);
+}
+
+.link-up {
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    color: #000;
+    font-size: 35px;
+
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 50px 0;
+    }
+
+    footer nav {
+        width: 140px;
+        margin: 25px auto;
+        padding: 20px 0;
+    }
+
+    footer h2 {
+        font-size: 1.687rem;
+    }
+
+    footer nav a {
+        font-size: 0.812rem;
+    }
+
+    footer nav a:not(:last-child) {
+        margin-bottom: 33px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer h2 {
+        font-size: 1.562rem;
+    }
+
+    footer nav a {
+        font-size: 0.94rem;
+    }
+
+    footer nav a:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .icons a {
+        font-size: 28px;
+    }
+}
